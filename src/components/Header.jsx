@@ -2,9 +2,13 @@ import React from 'react';
 
 const Header = () => {
 	return (
-		<div className='container mx-auto p-4 bg-slate-100 '>
-			<h1 className='text-red-400 text-center'>TOTORO</h1>
-            <h2 className='text-lg text-red-300 text-center'>Unofficial Home of The Ghibli Films</h2>
+		<div className='py-16 w-screen mx-auto bg-blend-multiply bg-gray-300 bg-fixed bg-center bg-cover bg-no-repeat bg-[url("https://studioghiblimovies.com/wp-content/uploads/2015/04/umbrella_rain_by_kyendo-d2uwlwi.jpg")]'>
+			<h1 className='drop-shadow-xl shadow-black font-extrabold text-7xl text-white text-center'>
+				TOTORO
+			</h1>
+			<h2 className='drop-shadow-xl shadow-black font-bold text-2xl text-white text-center'>
+				Unofficial Home of The Ghibli Films
+			</h2>
 		</div>
 	);
 };

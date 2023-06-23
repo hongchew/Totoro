@@ -1,14 +1,16 @@
 import React from 'react';
+import FilmCard from './FilmCard';
+import Spinner from './Spinner';
 
 const Films = ({ films, loading }) => {
 	if (loading) {
-		return <h2> Loading Films...</h2>;
+		return <Spinner />
 	}
 
 	return (
-		<ul>
+		<ul className='flex flex-wrap justify-center'>
 			{films.map((film) => (
-				<li key={film.id}>{film.title}</li>
+				<FilmCard id={film.id} film={film} />
 			))}
 		</ul>
 	);
