@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PageNav = ({ pageNumArray, currentPage }) => {
+	
 
 	return (
 		<nav className='flex justify-center'>
@@ -9,7 +10,7 @@ const PageNav = ({ pageNumArray, currentPage }) => {
 				{pageNumArray.map((num) => {
 					if (num == currentPage) {
 						return (
-							<li key={num} className='px-4 py-2 border bg-slate-300'>
+							<li key={num} className='px-4 py-2 border bg-rose-100'>
 								<a
 									onClick={() => changePage(num)}
 									href=''

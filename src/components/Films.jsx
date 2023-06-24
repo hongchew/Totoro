@@ -3,6 +3,8 @@ import FilmCard from './FilmCard';
 import Spinner from './Spinner';
 
 const Films = ({ films, loading }) => {
+
+    
 	if (loading) {
 		return <Spinner />
 	}
