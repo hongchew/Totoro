@@ -47,7 +47,7 @@ const FilmDetails = ({ film, people }) => {
 					</div>
 					<div className='px-8 py-2'>
 						<p>
-							<span className='font-semibold'>People:</span>
+							<span className='font-semibold'>Characters:</span>
 							<ul>
 								{people.map((person) => (
 									<li className='px-4'>{person.name || person}</li>

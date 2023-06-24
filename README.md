@@ -89,4 +89,4 @@ As such, films without such information will have a "No information available cu
 These components are taken from Flowbite due to their common nature but tediousness in creating.
 
 ## Credits
-Bannder image was obtained from https://studioghiblimovies.com/awesome-collection-of-my-neighbor-totoro-fan-art-and-artwork-fanart-friday/, original artist unknown.
+Banner image was obtained from https://studioghiblimovies.com/awesome-collection-of-my-neighbor-totoro-fan-art-and-artwork-fanart-friday/, original artist unknown.
