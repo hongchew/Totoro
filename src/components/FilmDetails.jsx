@@ -5,9 +5,9 @@ const FilmDetails = ({ film, people }) => {
 
 	return (
 		<>
-			<div className='m-10 flex flex-cold justify-center border-2 rounded-3xl'>
-				<img className='w-1/2 max-h-screen rounded-3xl' src={film.image}></img>
-				<div>
+			<div className='m-10 flex flex-row justify-center border-2 rounded-3xl'>
+				<img className='w-1/2 max-h-screen rounded-3xl basis-1/3' src={film.image}></img>
+				<div className='basis-2/3'>
 					<div className='p-8'>
 						<h1 className='text-5xl'>
 							{film.title}
