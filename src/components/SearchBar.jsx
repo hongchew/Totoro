@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchBar = ({ handleSearchChange, handleSearch, searchTerm }) => {
 	return (
-		<form className='m-auto mt-4 w-1/2 max-w-2xl justify-center'>
+		<form className='searchBar m-auto mt-4 w-1/2 max-w-2xl justify-center'>
 			<label
 				for='default-search'
 				className='mb-2 text-sm font-medium text-gray-900 sr-only'

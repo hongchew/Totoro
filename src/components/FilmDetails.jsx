@@ -3,7 +3,7 @@ import React from 'react';
 const FilmDetails = ({ film, people }) => {
 	return (
 		<>
-			<div className='m-10 flex flex-row justify-center border-2 rounded-3xl'>
+			<div className='filmDetails m-10 flex flex-row justify-center border-2 rounded-3xl'>
 				<img
 					className='max-h-screen rounded-3xl basis-1/3 w-full h-auto'
 					src={film.image}
