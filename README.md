@@ -12,6 +12,7 @@ Packages used includes:
 - React Router
 - Tailwind CSS
 - Axios
+- Cypress
 
 Information about the films are obtained from the [free Ghibli Film API](https://ghibliapi.vercel.app/#tag/Films)
 This is a fully frontend webapp, so not backend code is needed.
@@ -87,6 +88,11 @@ As such, films without such information will have a "No information available cu
 2 components of the application are apapted from the FOSS Tailwind UI library Flowbite - the Search Bar and the Loading Wheel with some modifications to fit Totoro better
 
 These components are taken from Flowbite due to their common nature but tediousness in creating.
+
+## Testing
+Testing is done on Cypress.
+Run `npx cypress open` to start the test.
+Disclaimer: some of the test may fail due to API call being too slow. Refreshing the test should make it ok.
 
 ## Credits
 Banner image was obtained from https://studioghiblimovies.com/awesome-collection-of-my-neighbor-totoro-fan-art-and-artwork-fanart-friday/, original artist unknown.

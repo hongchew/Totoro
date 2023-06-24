@@ -23,7 +23,6 @@ const FilmPage = ({}) => {
 			} else {
 				var peopleResArray = await Promise.all(
 					res.data.people.map(async (api) => {
-						console.log(api);
 						var peopleRes = await axios.get(api);
 						return peopleRes.data;
 					})

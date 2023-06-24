@@ -3,7 +3,7 @@ import React from 'react';
 const FilmDetails = ({ film, people }) => {
 	return (
 		<>
-			<div className='m-10 flex flex-row justify-center border-2 rounded-3xl'>
+			<div className='filmDetails m-10 flex flex-row justify-center border-2 rounded-3xl'>
 				<img
 					className='max-h-screen rounded-3xl basis-1/3 w-full h-auto'
 					src={film.image}
@@ -46,14 +46,14 @@ const FilmDetails = ({ film, people }) => {
 						</p>
 					</div>
 					<div className='px-8 py-2'>
-						<p>
-							<span className='font-semibold'>Characters:</span>
-							<ul>
-								{people.map((person) => (
-									<li className='px-4'>{person.name || person}</li>
-								))}
-							</ul>
-						</p>
+						<span className='font-semibold'>Characters:</span>
+						<ul>
+							{people.map((person) => (
+								<li key={person.id} className='px-4'>
+									{person.name || person}
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
 			</div>
