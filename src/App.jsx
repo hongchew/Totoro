@@ -26,16 +26,18 @@ const App = () => {
 				pageNumTemp.push(i);
 			}
 			setPageNumArray(pageNumTemp)
-			if(pageNumArray.find(pageNumber)){
-				setCurrentPage(pageNumber)
+			if(pageNumTemp.find((page) => page == pageNumber)){
+				setCurrentPage(parseInt(pageNumber))
+				console.log(pageNumber)
 			}else{
+				console.log("Invalid page number params") //set page number to 1, default to first page
 				setCurrentPage(1)
 			}
 		};
 
 		fetchFilms();
 
-	}, []); //blank dependency, make useEffect() run only when it runs, prevent loop.
+	}, [pageNumber]); //blank dependency, make useEffect() run only when it renders, prevent loop.
 
 
 	console.log(films);
@@ -51,7 +53,7 @@ const App = () => {
 	return (
 		<>
 			<Header />
-			<Films films={films} loading={loading} /> 
+			<Films films={currFilms} loading={loading} /> 
 			{/* <PageNav pageNumArray={pageNumArray} totalFilmsCount={films.length} changePage={changePage} /> */}
 		</>
 	);

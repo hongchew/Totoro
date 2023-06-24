@@ -10,7 +10,7 @@ const Films = ({ films, loading }) => {
 	return (
 		<ul className='flex flex-wrap justify-center'>
 			{films.map((film) => (
-				<FilmCard id={film.id} film={film} />
+				<FilmCard key={film.id} film={film} />
 			))}
 		</ul>
 	);

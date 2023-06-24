@@ -1,9 +1,7 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const FilmDetails = ({ film, people }) => {
 
-	const [loading, setLoading] = useState(false);
 
 	return (
 		<>
