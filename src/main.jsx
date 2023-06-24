@@ -11,17 +11,17 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/", //home page, page 1
     element: <App />,
     errorElement: <ErrorPage />,  
   },
   {
-    path:"/:pageNumber",
+    path:"/:pageNumber", //pages
     element: <App />,
     errorElement: <ErrorPage />,  
   },
   {
-    path:"/film/:filmId",
+    path:"/film/:filmId", //film detail page based on film id so that people can access directly if they have a link (not frontend js dependent)
     element: <FilmPage />,
     errorElement: <ErrorPage />,  
   }

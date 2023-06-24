@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FilmCard = ({ film }) => {
+	const detailLink = '/film/' + film.id;
+
 	return (
 		<div className='hover:brightness-75 w-1/5 border-2 m-4 rounded-3xl cursor-pointer'>
+			<Link to={detailLink}>
 			<div className='relative text-center '>
 				<img src={film.image} className='w-full rounded-2xl' />
 			</div>
@@ -17,6 +21,8 @@ const FilmCard = ({ film }) => {
 					Minutes
 				</p>
 			</div>
+            </Link>
+
 		</div>
 	);
 };
