@@ -46,15 +46,13 @@ const App = () => {
 	const indexFirst = indexLast - 10;
 	const currFilms = films.slice(indexFirst, indexLast);
 
-	const changePage = (pageNum) => {
-		setCurrentPage(pageNum);
-	};
 
 	return (
 		<>
 			<Header />
+			<PageNav pageNumArray={pageNumArray} currentPage={currentPage}/>
 			<Films films={currFilms} loading={loading} />
-			{/* <PageNav pageNumArray={pageNumArray} totalFilmsCount={films.length} changePage={changePage} /> */}
+			<PageNav pageNumArray={pageNumArray} currentPage={currentPage}/>
 		</>
 	);
 };
