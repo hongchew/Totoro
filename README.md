@@ -32,6 +32,8 @@ When hovering the cursor over any part of the entire card, the user is brought t
 
 Loading wheel was added while the app fetches the information from the Ghibli Film API or performing searches so that users have feedback that something is happening
 
+Entire header banner is clickable to return to the homepage to allow the user to easily return to the homepage from any other pages.
+
 Current page is highlited in the page navigation to allow user to know which page they are on at a glance
 
 Page Navigation at the top and bottom of the list of films to allow for easy navigation without to much scrolling, and both locations are familiar regions where page navigations can be found in most websites
@@ -42,6 +44,8 @@ Certain terminologies from the object obtained from the API had been changed on 
 1. ```people``` -> Character
 2. ```release_date``` -> Release Year
 3. ```running_time``` ->  Length
+
+Dedicated Error Page that display a simple error message and provide a link back to the home page via the header so that users will meet error in a gentler manner. 
 
 ### Search Logic
 Search Term are broken down into tokens separated by a space (```' '```) and stored in an array.
