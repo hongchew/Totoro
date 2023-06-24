@@ -125,11 +125,11 @@ const App = () => {
 				pageNumber={pageNumber}
 				loading={loading}
 			/>
-			<PageNav
-				currFilmsCount={currentFilms.length}
-				pageNumArray={pageNumArray}
-				currentPage={currentPage}
-			/>
+			{searching ? ( //conditional rendering of navbar - no navbar when searching
+				''
+			) : (
+				<PageNav pageNumArray={pageNumArray} currentPage={currentPage} />
+			)}
 		</>
 	);
 };
