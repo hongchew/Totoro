@@ -18,16 +18,18 @@ const FilmPage = ({}) => {
 			setFilm(res.data);
 
 			if (res.data.people == 'https://ghibliapi.vercel.app/people/') {
-				console.log('no people')
+				console.log('no people');
 				setPeople(['No information available currently.']);
 			} else {
-				var peopleResArray = await Promise.all(res.data.people.map(async (api) => {
-					console.log(api)
-					var peopleRes = await axios.get(api);
-					return peopleRes.data;
-				}));
+				var peopleResArray = await Promise.all(
+					res.data.people.map(async (api) => {
+						console.log(api);
+						var peopleRes = await axios.get(api);
+						return peopleRes.data;
+					})
+				);
 
-				setPeople(peopleResArray)
+				setPeople(peopleResArray);
 			}
 
 			setLoading(false);

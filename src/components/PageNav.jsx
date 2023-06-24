@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PageNav = ({ pageNumArray, currentPage }) => {
-	
-
 	return (
 		<nav className='flex justify-center'>
 			<ul className='inline-flex py-10 align-middle '>

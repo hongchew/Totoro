@@ -1,10 +1,6 @@
 import React from 'react';
 
-const SearchBar = ({
-	handleSearchChange,
-	handleSearch,
-	searchTerm
-}) => {
+const SearchBar = ({ handleSearchChange, handleSearch, searchTerm }) => {
 	return (
 		<form className='m-auto mt-4 w-1/2 max-w-2xl justify-center'>
 			<label
@@ -36,7 +32,7 @@ const SearchBar = ({
 					className='block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-rose-200 focus:border-rose-200'
 					placeholder='Search Title or Year'
 					onChange={handleSearchChange}
-                    value={searchTerm}
+					value={searchTerm}
 					required
 				/>
 

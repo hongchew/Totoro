@@ -45,12 +45,7 @@ const App = () => {
 		};
 
 		fetchFilms();
-	}, [pageNumber]); //blank dependency, make useEffect() run only when it renders, prevent loop.
-
-	//Get films on current page
-	const indexLast = currentPage * 10;
-	const indexFirst = indexLast - 10;
-	const currFilms = currentFilms.slice(indexFirst, indexLast);
+	}, [pageNumber]);
 
 	const handleSearchChange = (event) => {
 		setSearchTerm(event.target.value);
@@ -107,6 +102,11 @@ const App = () => {
 		setLoading(false);
 	};
 
+	//Get films on current page
+	const indexLast = currentPage * 10;
+	const indexFirst = indexLast - 10;
+	const currFilms = currentFilms.slice(indexFirst, indexLast);
+
 	return (
 		<>
 			<Header />
@@ -115,7 +115,7 @@ const App = () => {
 				handleSearch={handleSearch}
 				searchTerm={searchTerm}
 			/>
-			{searching ? (
+			{searching ? ( //conditional rendering of navbar - no navbar when searching
 				''
 			) : (
 				<PageNav pageNumArray={pageNumArray} currentPage={currentPage} />
