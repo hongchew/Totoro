@@ -46,14 +46,14 @@ const FilmDetails = ({ film, people }) => {
 						</p>
 					</div>
 					<div className='px-8 py-2'>
-						<p>
-							<span className='font-semibold'>Characters:</span>
-							<ul>
-								{people.map((person) => (
-									<li className='px-4'>{person.name || person}</li>
-								))}
-							</ul>
-						</p>
+						<span className='font-semibold'>Characters:</span>
+						<ul>
+							{people.map((person) => (
+								<li key={person.id} className='px-4'>
+									{person.name || person}
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
 			</div>
