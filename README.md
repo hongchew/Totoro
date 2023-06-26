@@ -95,7 +95,13 @@ These components are taken from Flowbite due to their common nature but tediousn
 
 ## Testing
 Testing is done on Cypress.
+
+Make sure the dev server is running (`npm run dev` is running)
+
 Run `npx cypress open` to start the test.
+
+Default dev server is set to `localhost:5173`, if the server is not running on this port, change the `const BASE_URL` constant in `cypress/e2e/spec.cy.js` to match the dev server you are running on.
+
 Disclaimer: some of the test may fail due to API call being too slow. Refreshing the test should make it ok.
 
 ## Credits
