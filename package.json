@@ -1,11 +1,13 @@
 {
   "name": "totoro",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "homepage": "https://hongchew.github.io/Totoro",
   "type": "module",
   "scripts": {
     "dev": "vite --port=5173",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -13,6 +15,7 @@
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "axios": "^1.4.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0"
