@@ -14,8 +14,9 @@ Packages used includes:
 - Axios
 - Cypress
 
-Information about the films are obtained from the [free Ghibli Film API](https://ghibliapi.vercel.app/#tag/Films)
-This is a fully frontend webapp, so not backend code is needed.
+Information about the films are obtained from the [free Ghibli Film API](https://ghibliapi.vercel.app/#tag/Films).
+
+This is a fully frontend webapp, so no backend code is needed.
 
 ## Functionalities
 1. Overview Page containing all the Studio Ghibli Filmography (Paginated to 10 films a page)
@@ -74,7 +75,7 @@ Search Results:
 
 This search logic allows for the most flexible search without returning unhelpful results.
 
-### State Managaement?
+### State Management?
 No application state managers such as Redux was used in this application
 
 All state is managed by React's built in component state and passed through props and callbacks. 
