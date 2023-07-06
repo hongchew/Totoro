@@ -1,6 +1,8 @@
 # Totoro
 Its the (unofficial) database for Studio Ghibli films!
 
+Access the website here: https://hongchew.github.io/Totoro
+
 ## Instructions
 To start using the webapp on localhost, just run ``` npm i && npm run dev ```
 
